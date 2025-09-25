@@ -71,6 +71,39 @@ This is a T3 Stack application built with Next.js 15, TypeScript, Prisma, NextAu
 - **Integration** - Components work seamlessly with Tailwind CSS for styling customization
 - **Usage Pattern** - Import ReactBits components as needed for specific UI requirements
 
+## Specialized SubAgents
+
+This project has access to specialized agents for different aspects of development. Use these agents for complex, domain-specific tasks:
+
+### Available Agents
+
+- **architecture-agent** - Central architecture coordinator for T3 Stack with ReactBits
+  - Use for: Overall project structure, coordination between frontend and backend, complex architectural decisions
+  - Tools: Task, Read, Edit, Write, Glob, Grep, Bash, TodoWrite
+
+- **frontend-agent** - ReactBits UI component specialist for T3 Stack frontend
+  - Use for: UI component development, ReactBits integration, frontend animations and interactions
+  - Tools: Read, Edit, Write, Glob, Grep
+
+- **backend-agent** - Backend specialist for API routes, database operations, and server logic
+  - Use for: API development, Prisma database operations, server-side logic
+  - Tools: Read, Edit, Write, Glob, Grep, Bash
+
+- **auth-agent** - Authentication and security specialist for NextAuth.js implementation
+  - Use for: Authentication flows, security implementation, NextAuth.js configuration
+  - Tools: Read, Edit, Write, Glob, Grep
+
+- **testing-agent** - Quality assurance and testing specialist for T3 Stack applications
+  - Use for: Test development, quality assurance, testing strategies
+  - Tools: Read, Edit, Write, Glob, Grep, Bash, TodoWrite
+
+### Usage Guidelines
+
+- Launch agents concurrently when working on multiple aspects simultaneously
+- Provide detailed task descriptions as agents are stateless
+- Use general-purpose agent for open-ended searches and complex research
+- Agents should be used proactively for their specialized domains
+
 ## Development Notes
 
 - Path aliases use `~/` prefix for `src/` directory
