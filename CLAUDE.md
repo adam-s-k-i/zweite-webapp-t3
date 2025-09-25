@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a T3 Stack application built with Next.js 15, TypeScript, Prisma, NextAuth.js, and Tailwind CSS. The project follows the T3 Stack conventions with a focus on type safety and developer experience.
+This is a T3 Stack application built with Next.js 15, TypeScript, Prisma, NextAuth.js, and Tailwind CSS. The project follows the T3 Stack conventions with a focus on type safety and developer experience. ReactBits is used as the primary UI component library for building animated and interactive user interfaces.
 
 ## Development Commands
 
@@ -44,6 +44,7 @@ This is a T3 Stack application built with Next.js 15, TypeScript, Prisma, NextAu
 - **Prisma** - Database ORM with PostgreSQL
 - **NextAuth.js** - Authentication with Discord provider
 - **Tailwind CSS** - Utility-first CSS framework
+- **ReactBits** - Animated and interactive UI component library
 - **T3 Env** - Type-safe environment variable management
 
 ### Database Schema
@@ -64,6 +65,12 @@ This is a T3 Stack application built with Next.js 15, TypeScript, Prisma, NextAu
 - Server variables: `AUTH_SECRET`, `AUTH_DISCORD_ID`, `AUTH_DISCORD_SECRET`, `DATABASE_URL`
 - Validation skipped with `SKIP_ENV_VALIDATION` flag
 
+### ReactBits UI Components
+- **Primary UI Framework** - ReactBits is used for all interactive and animated components
+- **Component Philosophy** - Focus on high-quality, animated, interactive, and fully customizable components
+- **Integration** - Components work seamlessly with Tailwind CSS for styling customization
+- **Usage Pattern** - Import ReactBits components as needed for specific UI requirements
+
 ## Development Notes
 
 - Path aliases use `~/` prefix for `src/` directory
@@ -71,3 +78,5 @@ This is a T3 Stack application built with Next.js 15, TypeScript, Prisma, NextAu
 - ESLint configured with TypeScript support and Next.js rules
 - Prettier with Tailwind CSS plugin for class sorting
 - Database connection uses global singleton pattern for development
+- ReactBits components should be used for complex UI interactions and animations
+- Combine ReactBits with Tailwind CSS for consistent styling and customization
